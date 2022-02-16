@@ -1,0 +1,105 @@
+.container{
+    width: 700px;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(21,21,22,1) 0%, rgba(36,44,111,1) 100%);
+    overflow: hidden;
+}
+
+.stars{
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	box-shadow: 50px 30px rgb(172, 20, 20),
+    100px 210px rgb(138, 96, 96),
+    580px 80px rgb(121, 105, 105),
+    400px 220px rgb(173, 166, 153),
+    650px 130px rgb(255, 230, 0),
+    200px 170px rgb(92, 4, 4),
+    350px 200px rgb(102, 72, 72),
+    390px 150px rgb(233, 155, 155),
+    230px 190px rgb(102, 72, 72),
+    320px 150px rgb(233, 155, 155),
+    150px 60px rgb(172, 20, 20),
+    530px 70px rgb(172, 20, 20);
+}
+
+@keyframes anim-stars {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-300px);
+    }
+}
+
+.stars {
+    animation: anim-stars 20s linear infinite;
+}
+
+.stars::after{
+    content: "";
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	box-shadow: 10px 5px rgb(172, 20, 20),
+    100px 210px rgb(138, 96, 96),
+    580px 80px rgb(121, 105, 105),
+    400px 220px rgb(173, 166, 153),
+    650px 130px rgb(255, 230, 0),
+    200px 170px rgb(92, 4, 4),
+    350px 200px rgb(102, 72, 72),
+    390px 150px rgb(233, 155, 155),
+    230px 190px rgb(102, 72, 72),
+    320px 150px rgb(233, 155, 155),
+    150px 60px rgb(172, 20, 20),
+    530px 10px rgb(172, 20, 20);
+}
+
+.stars{
+	position: relative;
+	width: 3px;
+	height: 3px;
+}
+
+.stars::after{
+    content: "";
+    position: absolute;
+    top: 300px;
+    width: 3px;
+}
+
+.stars2{
+    position: relative;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 615px 15px white,
+      225px 35px white,
+      350px 80px white,
+      210px 120px white,
+      275px 90px white,
+      230px 10px white,
+      120px 130px white,
+      300px 130px white,
+      220px 115px white;
+    animation: anim-stars 40s linear infinite;
+  }
+  
+  .stars2::after{
+    content: " ";
+    position: absolute;
+    top: 150px;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 15px 15px white,
+      125px 35px white,
+      550px 80px white,
+      610px 120px white,
+      275px 90px white,
+      230px 10px white,
+      120px 130px white,
+      300px 130px white,
+      220px 115px white;
+  }
+  
